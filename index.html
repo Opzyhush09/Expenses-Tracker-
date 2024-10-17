@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Chart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="balance-container">
+            <div class="balance-sub"> Balance
+                <h2 class="h-header">$921.48</h2>
+            </div>
+            <img class="logo-image" src="logo.svg" alt="logo-image">
+        </div>
+        <div class="spending-chart">
+            <h3>Spending - last 7 days</h3>
+            <div class="chart-container">
+                <div class="bar-chart" id="barChart">
+                    <!-- Bars will be dynamically generated here -->
+                </div>
+                <div class="label-chart" id="labelChart">
+                    <!-- Day labels will be dynamically generated here -->
+                </div>
+            </div>
+            <hr>
+            <div class="total-spent">
+                <div>
+                    <span class="t-month">Total this month</span>
+                    <h2>$478.33</h2>
+                </div>
+                <div>
+                    <p>+2.4% </p>
+                    <span class="l-span">from last month</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>

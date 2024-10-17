@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #F7EFE5;
+    text-indent: 40px;   
+    cursor: pointer; 
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+    margin-top: 20%;
+    border: 0.1px solid;
+    border-color: rgb(246, 239, 239);
+}
+
+.h-header {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+h2 {
+    color: #180e05;
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+
+h3 {
+    padding-top: 20px;
+    font-size: 1.5rem;
+    color: #180e05;
+    font-weight: bold;
+    font-family: arial;
+}
+
+p {
+    color: #180e05;
+    margin-left: 100px;
+    font-weight: bolder; 
+    font-family: sans-serif;  
+}
+
+.t-month {
+    font-size: 0.8rem;
+    color: gray;
+    font-family: sans-serif;
+}
+
+.l-span {
+    margin-left: 107px;
+    font-size: 0.7rem;
+    color: grey;
+}
+
+.balance-container {
+    display: flex;
+    gap: 220px;
+    background-color: #FD8B51;
+    width: 450px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.balance-sub {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.logo-image {
+    width: 50px;
+}
+
+.spending-chart {
+    width: 450px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.total-spent {
+    margin-top: 25px;
+    display: flex;
+    gap: 85px;
+}
+
+/* Chart section */
+
+.bar-chart {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: space-between; 
+    margin-left: 20px;
+}
+
+.bar {
+    width: 50px;
+    background-color: #FD8B51;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    position: relative; /* Needed for positioning the amount label */
+}
+
+.bar:hover {
+    background-color: #FFE3E3;
+}
+
+.label-chart {
+    text-indent: 0;
+    margin-top: 10px;
+    display: flex;
+    gap: 40px;
+    font-size: 12px;
+    margin-left: 40.5px;
+    color: #493628;
+}
+.wed-bar:hover {
+    background-color: #A2D2DF; /* Different hover color for the Wednesday bar */
+}
+
+.rd-bar:hover {
+    background-color: #B7E0FF;
+}
+
+/* Media Query Section */
+@media only screen and (max-width: 400px) {
+    .main-container {
+        width: 100%;
+    }
+    .balance-container {
+        width: 100%;
+    }
+    .spending-chart {
+        width: 100%;
+    }
+}
